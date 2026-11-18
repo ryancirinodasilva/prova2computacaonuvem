@@ -50,6 +50,16 @@ Ele foi "recuperado", na verdade subiu outro pod, isso acontece porque fizemos u
 
 Questão 4. Qual é a finalidade de um Service no Kubernetes?
 
+
+
+## Conclusão
+
+Descreva brevemente o que você aprendeu durante a atividade prática, destacando a utilização do docker e do kubernetes
+
+Aprendemos como Subir um docker e como é trocar o HTML da imagem ali presente.
+
+Aprendemos como fazer um deployment de um pod e como fazer a replicação dele para 3 replicas, e também o que acontece quando um pod é deletado.
+
 Resposta:
 
 O Service é quem cria o acesso a comunicação HTTP dentro do cluster Kubernetes.
