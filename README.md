@@ -33,11 +33,13 @@ Já um contêiner utilizará apenas o que for necessario para desenvolvimento de
 Questão 1. Qual é a diferença entre uma imagem docker e um contêiner em execução?
 
 Resposta:
+
 Uma Imagem docker é a planta de onde o Contêiner será criado, Já o Contêiner é a instancia em sí funcionando em segundo plano, seria como uma casa pronta.
 
 Questão 2. Qual é a função de um Deployment no Kubernetes?
 
 Resposta:
+
 Ele é como o cara que faz os Pods continuarem de Pé, um Exemplo seria, quando um pod apresenta falha, ele reinicia uma nova instancia de pod para suprir o pod que caiu assim, voltando ao padrão especificado.
 
 Questão 3. O que aconteceu quando você excluiu um Pod? Por que isso aconteceu?
