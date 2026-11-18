@@ -1,0 +1,35 @@
+root@controlplane:~$ kubectl create deployment comunicado --image=nginx:alpine 
+deployment.apps/comunicado created
+
+root@controlplane:~$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+comunicado-84fccb49c5-vdrqn   1/1     Running   0          6m42s
+
+root@controlplane:~$ kubectl scale deployment comunicado-web --replicas=3
+Error from server (NotFound): deployments.apps "comunicado-web" not found
+
+root@controlplane:~$ kubectl scale deployment comunicado --replicas=3
+deployment.apps/comunicado scaled
+
+root@controlplane:~$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+comunicado-84fccb49c5-dhrs9   1/1     Running   0          44s
+comunicado-84fccb49c5-j9z67   1/1     Running   0          44s
+comunicado-84fccb49c5-vdrqn   1/1     Running   0          9m3s
+
+root@controlplane:~$ kubectl delete pod comunicado
+Error from server (NotFound): pods "comunicado" not found
+
+root@controlplane:~$ kubectl delete pod comunicado^C
+
+root@controlplane:~$ kubectl delete pod comunicado-84fccb49c5-vdrqn
+pod "comunicado-84fccb49c5-vdrqn" deleted from default namespace
+
+root@controlplane:~$ kubrctl get pods
+kubrctl: command not found
+
+root@controlplane:~$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+comunicado-84fccb49c5-dhrs9   1/1     Running   0          119s
+comunicado-84fccb49c5-j9z67   1/1     Running   0          119s
+comunicado-84fccb49c5-t57jd   1/1     Running   0          26s
