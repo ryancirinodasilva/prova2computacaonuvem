@@ -1,0 +1,8 @@
+root@controlplane:~$ kubectl delete pod comunicado-84fccb49c5-vdrqn
+pod "comunicado-84fccb49c5-vdrqn" deleted from default namespace
+
+root@controlplane:~$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+comunicado-84fccb49c5-dhrs9   1/1     Running   0          119s
+comunicado-84fccb49c5-j9z67   1/1     Running   0          119s
+comunicado-84fccb49c5-t57jd   1/1     Running   0          26s
