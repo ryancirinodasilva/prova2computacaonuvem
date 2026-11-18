@@ -2,8 +2,6 @@
 
 ## 1. Fundamentos da Computação em Nuvem
 
-### ETAPA 1 — FUNDAMENTOS DA COMPUTAÇÃO EM NUVEM Tempo sugerido: 10 minutos Antes de iniciar a atividade prática, responda brevemente:
-
 Questão 1. Qual é a diferença entre IaaS e SaaS? Cite um exemplo de utilização de cada modelo. 
 
 Resposta:
@@ -29,3 +27,28 @@ Resposta:
 
 Uma Maquina Virtual utiliza Tudo que uma ISO tem, Por exemplo Uma maquina virtual terá a câmera do Windows, Perfeito para um ambiente de HML
 Já um contêiner utilizará apenas o que for necessario para desenvolvimento de uma produto.
+
+## 6. Interpretação dos Resultados
+
+Questão 1. Qual é a diferença entre uma imagem docker e um contêiner em execução?
+
+Resposta:
+Uma Imagem docker é a planta de onde o Contêiner será criado, Já o Contêiner é a instancia em sí funcionando em segundo plano, seria como uma casa pronta.
+
+Questão 2. Qual é a função de um Deployment no Kubernetes?
+
+Resposta:
+Ele é como o cara que faz os Pods continuarem de Pé, um Exemplo seria, quando um pod apresenta falha, ele reinicia uma nova instancia de pod para suprir o pod que caiu assim, voltando ao padrão especificado.
+
+Questão 3. O que aconteceu quando você excluiu um Pod? Por que isso aconteceu?
+
+Resposta:
+
+Ele foi "recuperado", na verdade subiu outro pod, isso acontece porque fizemos um deployment com 3 replicas
+
+Questão 4. Qual é a finalidade de um Service no Kubernetes?
+
+Resposta:
+
+O Service é quem cria o acesso a comunicação HTTP dentro do cluster Kubernetes.
+
