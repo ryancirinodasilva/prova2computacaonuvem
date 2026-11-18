@@ -1,0 +1,7 @@
+root@controlplane:~$ kubectl get services
+NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+comunica     ClusterIP   10.97.185.73   <none>        80/TCP    13s
+kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP   13d
+
+root@controlplane:~$ kubectl run teste --image=curlimages/curl --rm it --restart=Never --curl http://comunica  
+error: unknown flag: --curl
