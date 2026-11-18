@@ -33,3 +33,15 @@ NAME                          READY   STATUS    RESTARTS   AGE
 comunicado-84fccb49c5-dhrs9   1/1     Running   0          119s
 comunicado-84fccb49c5-j9z67   1/1     Running   0          119s
 comunicado-84fccb49c5-t57jd   1/1     Running   0          26s
+
+root@controlplane:~$ kubectl expose deployment comunicado --port=80 --target-port=80 --name=comunica
+service/comunica exposed
+
+root@controlplane:~$ kubectl get services
+NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+comunica     ClusterIP   10.97.185.73   <none>        80/TCP    13s
+kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP   13d
+
+root@controlplane:~$ kubectl run teste --image=curlimages/curl --rm it --restart=Never --curl http://comunica  
+error: unknown flag: --curl
+See 'kubectl run --help' for usage.
