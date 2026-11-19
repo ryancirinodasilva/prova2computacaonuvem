@@ -60,6 +60,13 @@ Aprendemos como Subir um docker e como é trocar o HTML da imagem ali presente.
 
 Aprendemos como fazer um deployment de um pod e como fazer a replicação dele para 3 replicas, e também o que acontece quando um pod é deletado.
 
+
+
+
+#Importante:
+
+Nesse Repositorio temos Os Terminais do Killercoda, bem como as Evidencias separadas por arquivos de Texto.
+
 Resposta:
 
 O Service é quem cria o acesso a comunicação HTTP dentro do cluster Kubernetes.
